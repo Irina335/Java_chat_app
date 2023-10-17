@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="ap_main" fx:controller="com.example.socket_chat.MainController" maxHeight="501.0" maxWidth="582.0" minHeight="501.0" minWidth="582.0" prefHeight="501.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="171.0" layoutY="14.0" text="WeChat Application !" textFill="#575757">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="sp_main" layoutX="50.0" layoutY="70.0" prefHeight="332.0" prefWidth="488.0" fitToWidth="true">
+         <content>
+            <VBox fx:id="vbox_messages" prefHeight="300.0" prefWidth="461.0">
+               <children>
+                  <TextFlow prefHeight="80.0" prefWidth="461.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <TextField  fx:id="tf_message" layoutX="50.0" layoutY="423.0" prefHeight="41.0" prefWidth="420.0" />
+      <Button fx:id="button_send" layoutX="476.0" layoutY="423.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="62.0" style="-fx-background-color: #206cb9;" text="Envoyer" textFill="#fcfafa" />
+   </children>
+</AnchorPane>
